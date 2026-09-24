@@ -1,0 +1,24 @@
+# KiCad: lock files, backups, per-user state
+*.lck
+~*.lck
+*-backups/
+*.bak
+*-bak
+_autosave-*
+fp-info-cache
+*.kicad_prl
+
+# Local tooling and history
+.history/
+.konnect/
+backup_original/
+
+# The release zip is rebuilt from fab/gerbers, no need to track both
+fab/*.zip
+
+# Misc
+.DS_Store
+*.swp
+
+# KiCad crash/restore snapshots
+_restore_backup_*/

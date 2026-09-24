@@ -1,0 +1,11 @@
+(sym_lib_table
+  (version 7)
+
+  (lib (name "Device") (type "KiCad") (uri "${KIPRJMOD}/lib/symbols/Device.kicad_sym") (options "") (descr ""))
+  (lib (name "Connector_Generic") (type "KiCad") (uri "${KIPRJMOD}/lib/symbols/Connector_Generic.kicad_sym") (options "") (descr ""))
+  (lib (name "Relay") (type "KiCad") (uri "${KIPRJMOD}/lib/symbols/Relay.kicad_sym") (options "") (descr ""))
+  (lib (name "Isolator") (type "KiCad") (uri "${KIPRJMOD}/lib/symbols/Isolator.kicad_sym") (options "") (descr ""))
+  (lib (name "MCU_Module") (type "KiCad") (uri "${KICAD10_SYMBOL_DIR}/MCU_Module.kicad_sym") (options "") (descr ""))
+  (lib (name "power") (type "KiCad") (uri "${KIPRJMOD}/lib/symbols/power.kicad_sym") (options "") (descr ""))
+  (lib (name "fab") (type "KiCad") (uri "${KICAD10_3RD_PARTY}/symbols/org_fabcloud_gitlab_electronics_kicad/fab.kicad_sym") (options "") (descr ""))
+  (lib (name "Optocoupler_AKL") (type "KiCad") (uri "${KICAD10_3RD_PARTY}/symbols/com_github_dawidcislo_alternate-kicad-library/Optocoupler_AKL.kicad_sym") (options "") (descr "")))
