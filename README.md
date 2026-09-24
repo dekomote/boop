@@ -1,7 +1,12 @@
 # Boop
 
-A small board that lets ESPHome press the power and reset buttons on a PC, and
-tell whether the PC is actually on.
+A small board that lets ESPHome press the power and reset buttons on a PC, and tell whether the PC is actually on.
+
+
+<div style="text-align: center;">
+![Boop 3D](https://raw.githubusercontent.com/dekomote/boop/refs/heads/master/boop.png)
+</div>
+
 
 It carries a Seeed XIAO ESP32-C3 on sockets. Two relays sit in parallel with the
 front-panel power and reset buttons, so the real buttons keep working. A third
