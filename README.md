@@ -4,7 +4,9 @@ A small board that lets ESPHome press the power and reset buttons on a PC, and t
 
 
 <div style="text-align: center;">
-![Boop 3D](https://raw.githubusercontent.com/dekomote/boop/refs/heads/master/boop.png)
+
+![Boop 3D](https://raw.githubusercontent.com/dekomote/boop/refs/heads/master/boop.png "Boop 3D")
+
 </div>
 
 
