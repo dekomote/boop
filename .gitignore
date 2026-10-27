@@ -22,3 +22,7 @@ fab/*.zip
 
 # KiCad crash/restore snapshots
 _restore_backup_*/
+
+# ESPHome
+.esphome/
+secrets.yaml

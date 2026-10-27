@@ -147,7 +147,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/9013ec1e-f6ce-4926-8d9f-538802e6f6cd")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -257,7 +257,7 @@
 				)
 			)
 		)
-		(property "Value" "G6K-2F-Y-TR DC5"
+		(property "Value" "G6K-2F-Y-TR DC4.5"
 			(at -0.04 6.3 90)
 			(layer "F.Fab")
 			(uuid "741e24f4-bde6-41c9-b749-999fd94ee1e0")
@@ -294,7 +294,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C47190"
+		(property "LCSC" "C397193"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -310,7 +310,7 @@
 		(property ki_fp_filters "Relay*DPDT*Omron*G6K?2*")
 		(path "/ec89a088-f0c4-43aa-b48a-ed29f6148d62")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -703,7 +703,13 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/21acb208-8ce5-4882-9b91-1a4bb8587f0e")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -985,7 +991,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/6a09dc50-cf14-4b1d-be2f-c21787eb5f70")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1227,7 +1233,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/aec4a282-074e-428c-8299-8f83c8a74609")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1553,7 +1559,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/05c0388e-f766-4ec5-bf2c-eddc74872274")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1716,7 +1722,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/715f8e88-183a-4f25-822f-8518983d954a")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2015,7 +2021,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/df3d6efe-0dac-420b-857b-d492b43f71d5")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2174,7 +2180,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/3a431140-330a-40ab-9fa5-04677c335bb5")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2455,7 +2461,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/b9398ae0-88a4-4ab0-a121-55c880db12b1")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2614,7 +2620,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/296434eb-72bf-4010-8c64-06f794748fab")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2856,7 +2862,7 @@
 		(property ki_fp_filters "SMDIP*W9.53mm*")
 		(path "/f3b70f02-eb3d-4e0b-b5b9-9a3964802d09")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3117,7 +3123,13 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/9eadd664-710b-4cd5-b35d-0693c4fd547c")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3400,7 +3412,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/923946da-8989-4476-aa4b-c8b7607622f9")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3642,7 +3654,7 @@
 		(property ki_fp_filters "DIP*W7.62mm*")
 		(path "/2c3ff3f6-7868-4f0c-b267-4757ea1a6d7f")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3903,7 +3915,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/7347b209-2a25-4bd7-8289-fe26993d73a0")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4229,7 +4241,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/1d01a9a3-d710-4f47-80bc-c65d658cf11c")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4471,7 +4483,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/6e5919b5-1377-46d4-9dcb-ccef593d3e83")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4717,7 +4729,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/93d5a444-1a32-4f6b-8267-03c076e67f36")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5077,7 +5089,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/0f311b1f-307b-48cb-a5b1-3413aa499557")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5323,7 +5335,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/80b22ff1-6dda-435d-bdb7-0391f2eafde4")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5573,7 +5585,7 @@
 				)
 			)
 		)
-		(property "Value" "G6K-2F-Y-TR DC5"
+		(property "Value" "G6K-2F-Y-TR DC4.5"
 			(at -0.04 6.3 90)
 			(layer "F.Fab")
 			(uuid "b1ebb222-fac8-4398-9efc-ccd42fe1edae")
@@ -5610,7 +5622,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C47190"
+		(property "LCSC" "C397193"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5626,7 +5638,7 @@
 		(property ki_fp_filters "Relay*DPDT*Omron*G6K?2*")
 		(path "/00aa6160-41fa-4ed5-8140-4172160e4bab")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6080,7 +6092,7 @@
 		(property ki_fp_filters "DIP*W7.62mm*")
 		(path "/a34566c7-f4c1-4c3d-941b-c9a30c2db857")
 		(sheetname "/")
-		(sheetfile "esphome-pc-power-dongle.kicad_sch")
+		(sheetfile "boop.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6359,28 +6371,6 @@
 		(layer "Edge.Cuts")
 		(uuid "e8c6d62f-1bb8-40a3-bfe4-7857ef63eff8")
 	)
-	(gr_text "MB"
-		(at 162 117.3 0)
-		(layer "F.SilkS")
-		(uuid "a751d40c-6351-4084-911f-489cdaf5bd77")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "CASE"
-		(at 166 117.3 0)
-		(layer "F.SilkS")
-		(uuid "a3f88d67-da21-4036-9305-1f46b216925b")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
 	(gr_text "5V IN"
 		(at 108 85.8 0)
 		(layer "F.SilkS")
@@ -6579,6 +6569,17 @@
 			)
 		)
 	)
+	(gr_text "MB"
+		(at 162 117.3 0)
+		(layer "F.SilkS")
+		(uuid "a751d40c-6351-4084-911f-489cdaf5bd77")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(gr_text "PWR LED"
 		(at 164 85.8 0)
 		(layer "F.SilkS")
@@ -6627,6 +6628,17 @@
 		(at 166 106.9 0)
 		(layer "F.SilkS")
 		(uuid "dc155d39-1de6-459f-9e61-e3378a8b171e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "CASE"
+		(at 166 117.3 0)
+		(layer "F.SilkS")
+		(uuid "a3f88d67-da21-4036-9305-1f46b216925b")
 		(effects
 			(font
 				(size 1 1)

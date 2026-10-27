@@ -15,9 +15,14 @@ front-panel power and reset buttons, so the real buttons keep working. A third
 input watches the power LED header so Home Assistant knows the state instead of
 guessing.
 
+<div style="text-align: center;">
+
+![Boop v1, first soldered board](boop_v1.jpeg "Boop v1, first soldered board")
+
+</div>
+
 **Status:** designed and checked (ERC clean, DRC has no errors, JLCPCB's
-pre-flight passes), Gerbers exported. Not built yet, so nothing here has been
-tested on real hardware. Treat it as a first spin.
+pre-flight passes). The first board has been built and soldered, and it works.
 
 ## How it works
 
@@ -67,52 +72,23 @@ Four M3 holes in the corners for standoffs.
 
 ## ESPHome
 
-Pins are the XIAO ESP32-C3 D-numbers: D1 = GPIO3, D2 = GPIO4, D3 = GPIO5.
+The full config is in [`boop-esphome.yaml`](boop-esphome.yaml). Pins are the XIAO
+ESP32-C3 D-numbers: D1 = GPIO3, D2 = GPIO4, D3 = GPIO5.
 
-```yaml
-esphome:
-  name: boop
+It exposes three buttons to Home Assistant (power tap, power hold for force off,
+reset) and a "PC is on" sensor. The relays are internal and always start off, so
+a reboot can't hold a button down.
 
-esp32:
-  board: seeed_xiao_esp32c3
-  framework:
-    type: esp-idf
+Create a `secrets.yaml` next to it with `wifi_ssid`, `wifi_password`,
+`boop_api_key` (`openssl rand -base64 32`), `boop_ota_password` and
+`boop_ap_password`, then flash the first time over USB:
 
-switch:
-  - platform: gpio
-    id: power_relay
-    pin: GPIO4
-  - platform: gpio
-    id: reset_relay
-    pin: GPIO5
-
-button:
-  - platform: template
-    name: "PC power (tap)"
-    on_press:
-      - switch.turn_on: power_relay
-      - delay: 300ms
-      - switch.turn_off: power_relay
-  - platform: template
-    name: "PC power (hold, force off)"
-    on_press:
-      - switch.turn_on: power_relay
-      - delay: 6s
-      - switch.turn_off: power_relay
-  - platform: template
-    name: "PC reset"
-    on_press:
-      - switch.turn_on: reset_relay
-      - delay: 300ms
-      - switch.turn_off: reset_relay
-
-binary_sensor:
-  - platform: gpio
-    name: "PC is on"
-    pin:
-      number: GPIO3
-      inverted: true
 ```
+esphome run boop-esphome.yaml
+```
+
+If the board isn't detected, hold BOOT, tap RESET, release BOOT. Unplug J1
+(the motherboard 5 V) while flashing over USB-C. Later updates go over Wi-Fi.
 
 ## Building it
 

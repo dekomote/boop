@@ -1,0 +1,78 @@
+esphome:
+  name: boop
+  friendly_name: Boop
+
+esp32:
+  board: seeed_xiao_esp32c3
+  framework:
+    type: esp-idf
+
+logger:
+
+api:
+  encryption:
+    key: !secret boop_api_key
+
+ota:
+  - platform: esphome
+    password: !secret boop_ota_password
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    ssid: "Boop Fallback"
+    password: !secret boop_ap_password
+
+captive_portal:
+
+# D2 -> K1 (power button), D3 -> K2 (reset button), D1 <- power LED sense
+switch:
+  - platform: gpio
+    id: power_relay
+    pin: GPIO4
+    restore_mode: ALWAYS_OFF
+    internal: true
+  - platform: gpio
+    id: reset_relay
+    pin: GPIO5
+    restore_mode: ALWAYS_OFF
+    internal: true
+
+button:
+  - platform: template
+    name: "PC power (tap)"
+    icon: mdi:power
+    on_press:
+      - switch.turn_on: power_relay
+      - delay: 300ms
+      - switch.turn_off: power_relay
+  - platform: template
+    name: "PC power (hold, force off)"
+    icon: mdi:power-cycle
+    on_press:
+      - switch.turn_on: power_relay
+      - delay: 6s
+      - switch.turn_off: power_relay
+  - platform: template
+    name: "PC reset"
+    icon: mdi:restart
+    on_press:
+      - switch.turn_on: reset_relay
+      - delay: 300ms
+      - switch.turn_off: reset_relay
+
+binary_sensor:
+  - platform: gpio
+    name: "PC is on"
+    device_class: power
+    pin:
+      number: GPIO3
+      inverted: true
+    filters:
+      # the power LED blinks in sleep on some boards; ignore short glitches
+      - delayed_on: 500ms
+      - delayed_off: 500ms
+
+  - platform: status
+    name: "Boop status"
